@@ -13,10 +13,7 @@ RUN uv sync --locked
 
 ENV PATH="/app/.venv/bin:$PATH"
 
-RUN useradd -r -m app \
-    && mkdir -p /app/data \
-    && chown -R app /app/data
-USER app
+RUN mkdir -p /app/data
 
 VOLUME /app/data
 CMD ["rooditpy"]
