@@ -1,0 +1,19 @@
+[project]
+name = "rooditpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pui4 (Daniel)", email = "70605806+pui4@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "neonize>=0.10.0",
+]
+
+[project.scripts]
+rooditpy = "rooditpy:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
